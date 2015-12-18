@@ -12,7 +12,8 @@ What value do you think it offers?
 
 A:
 The staging area is in-between the working directory and the repository.
-It's an area to put files that are in the working directory that you want to commit to the repository, but haven't actually committed yet.
+It's an area to put files that are in the working directory that you want to 
+commit to the repository, but haven't actually committed yet.
 
 Q:
 How can you use the staging area to make sure you have one commit per logical change?
@@ -21,3 +22,26 @@ A:
 Compare the file in the staging area to 
 (most recent commit) git diff --staged    [commit1]vs[staging area]
 (working directory ) git diff        [staging area]vs[working directory]
+
+Q;
+What are some situations when branches would be 
+helpful in keeping your history organized? How would branches help?
+
+A:
+Branches are useful when you want to try-out an idea but not have to worry
+about breaking the build by modifying the master branch. By using a branch,
+you can have access to the same files as the master, except changes you make
+stay on your branch, they don't affect the master.
+
+Q:
+How do the diagrams help you visualize the branch structure?
+
+A:
+Branch diagrams help show which commits are reachable and which are not.
+They also help show what a branch builds from and what features it adds.
+
+Q;
+What is the result of merging two branches together? 
+Why do we represent it in the diagram the way we do?
+
+A:
