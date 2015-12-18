@@ -12,5 +12,12 @@ What value do you think it offers?
 
 A:
 The staging area is in-between the working directory and the repository.
-It's an area to put files that are in the working directory that you want to
-commit to the repository, but haven't actually committed yet.
+It's an area to put files that are in the working directory that you want to commit to the repository, but haven't actually committed yet.
+
+Q:
+How can you use the staging area to make sure you have one commit per logical change?
+
+A:
+Compare the file in the staging area to 
+(most recent commit) git diff --staged    [commit1]vs[staging area]
+(working directory ) git diff        [staging area]vs[working directory]
