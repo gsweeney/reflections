@@ -1,0 +1,16 @@
+Q:
+What happens when you initialize a repository? Why do you need to do it?
+
+A:
+A repository is initialized using 'git init'
+This creates a hidden directory .git that stores the file history metadata.
+It's needed for git to track the history of the files in the directory.
+
+Q:
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+A:
+The staging area is in-between the working directory and the repository.
+It's an area to put files that are in the working directory that you want to
+commit to the repository, but haven't actually committed yet.
