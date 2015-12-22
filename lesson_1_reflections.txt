@@ -1,10 +1,17 @@
+How to Use Git and GitHub
+Lesson 1
+Reflections
+-------------------------
+
+
 Q:
 How did viewing a diff between two versions of a file help
 you see the bug that was introduced?
 
 A:
-It is easier to compare the difference between two versions
-than having to search only the current version for a bug.
+It is easier to use the 'diff' command to compare the differences 
+between two versions. It quickly shows the changes made to the file.
+That's a lot easier than having to comb lines of code for a bug.
 
 Q:
 How could having easy access to the entire history of a 
@@ -12,16 +19,19 @@ file make you a more efficient programmer in the long term?
 
 A:
 It is easier to see your own mistakes by examining the history
-of  a file.  You can see where your logic was and  was not right.
+of  a file.  By learning from your mistakes, you should become a 
+better programmer.
 
 Q:
 What do you think are the pros and cons of manually choosing 
-when to create a commit, like you do in Git, vs having versions 
+when to create a commit, like you do in Git, versus having versions 
 automatically saved, like Google Docs does?
 
 A:
-Pros: less versions, more meaning to each version saved
-Cons: if you forget to commit changes when needed
+Pros: since there is control over when versions are saved, there are less versions.
+      since there are less versions, there is more meaning to each version saved.
+Cons: if you forget to commit changes when needed, the value of version control is lost.
+      you end up with too many changes per commit.
 
 Q:
 Why do you think some version control systems, like Git, 
@@ -29,23 +39,25 @@ allow saving multiple files in one commit, while others,
 like Google Docs, treat each file separately?
 
 A:
-Because version control systems like Git often track programs
-where files have dependencies, so it makes sense to allow saving
-multiple file in one commit.  Google docs, not so much.
+Version control systems like Git often track programs
+where files have dependencies on each other. It makes sense to save
+multiple files in one commit when such dependencies exist.  
+Google docs is mostly for storage, so it prioritizes the file
+that is open and being currently modified.
 
 Q:
-How can you use the commands git log and git diff to view the history of files?
+How can you use the commands 'git log' and 'git diff' to view the history of files?
 
 A:
 git log: shows a history of the commits, including the commit ID
-git diff <older commit ID> <newer commit ID>: shows the difference between two commits, 
-with + indicating a line added and - indicating a line removed. 
+git diff <oldID> <newID>: shows the difference between two commits, 
+                          with + indicating a line added and - indicating a line removed. 
 		  
 Q:
 How might using version control make you more confident to make changes that could break something?
 
 A:
-Because with version control you can always revert to an error-free version!
+Because with version control you can always revert to an error-free version.
 So breaking the build is easier to stomach.
 
 Q:

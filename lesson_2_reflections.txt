@@ -1,10 +1,17 @@
+How to Use Git and GitHub
+Lesson 2
+Reflections
+-------------------------
+
+
 Q:
 What happens when you initialize a repository? Why do you need to do it?
 
 A:
-A repository is initialized using 'git init'
-This creates a hidden directory .git that stores the file history metadata.
-It's needed for git to track the history of the files in the directory.
+A local repository is initialized by navigating to the directory and using 
+the command 'git init'.
+The 'git init' command creates a hidden directory called .git.
+the .git directory stores the file history data that enables version control to work.
 
 Q:
 How is the staging area different from the working directory and the repository?
@@ -19,7 +26,7 @@ Q:
 How can you use the staging area to make sure you have one commit per logical change?
 
 A:
-Compare the file in the staging area to 
+Compare the file in the staging area by using the commands:
 (most recent commit) git diff --staged    [commit1]vs[staging area]
 (working directory ) git diff        [staging area]vs[working directory]
 
@@ -29,9 +36,9 @@ helpful in keeping your history organized? How would branches help?
 
 A:
 Branches are useful when you want to try-out an idea but not have to worry
-about breaking the build by modifying the master branch. By using a branch,
-you can have access to the same files as the master, except changes you make
-stay on your branch, they don't affect the master.
+about breaking the build. By using a branch from the master,
+you can have access to the same files as the master, except that the changes 
+you make stay on your branch. They don't affect the master unless you merge branches.
 
 Q:
 How do the diagrams help you visualize the branch structure?
@@ -45,3 +52,16 @@ What is the result of merging two branches together?
 Why do we represent it in the diagram the way we do?
 
 A:
+The result of merging two branches is one new branch that includes 
+the commits from both branches.  Before merging, the branches are 
+separate from each other, so representing them as separate before merging and then
+together after merging is appropriate.
+
+Q:
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A:
+pros: the user controls which changes are accepted and which are not. faster than manually merging.
+cons: need to search and edit the code using merge flags set by git.
+
+
