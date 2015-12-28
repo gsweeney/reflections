@@ -20,3 +20,33 @@ A:
 Control over your own code is maintained by choosing manually when to pull changes.
 It's possible that another person could push something to the remote repository that 
 you'd prefer not to pull until you choose to.
+
+Q:
+Describe the differences between forks, clones, and branches. 
+When would you use one instead of another?
+
+A:
+A clone command will clone the remote repository to your local computer.
+A fork is the same thing as a clone, except it is done remotely through github.
+A fork prevents having to clone and then push a repository to your own remote repository. It does
+that stuff auto-magically.
+A branch is a separate version of the master, starting from a point on the master branch and then
+becoming something else that does not affect the master in any way.  
+
+Q:
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+A:
+Having a local copy of he last known remote state allows the user to examine the remote state
+while off-line, or not connected to the remote repository. This would be useful if access to
+internet is not possible for a while.
+
+Q:
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+A:
+To collaborate without Git or GitHub, individual files would need to be transferred to each person 
+working on the project.  This would make it confusing as to what is current and what is not.  It would
+be more difficult to track changes and who made those changes and why.  It might be easier to not be 
+as closely supervised, but when working within a team that seems like generally a bad thing. Git and GitHub
+make controlling the files a more stream-lined process.
