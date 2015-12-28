@@ -50,3 +50,14 @@ working on the project.  This would make it confusing as to what is current and 
 be more difficult to track changes and who made those changes and why.  It might be easier to not be 
 as closely supervised, but when working within a team that seems like generally a bad thing. Git and GitHub
 make controlling the files a more stream-lined process.
+
+Q:
+When would you want to make changes in a separate branch rather than directly in master? 
+What benefits does each approach have?
+
+A:
+You'd want to make changes to a separate branch besides master if you're collaborating with others
+and need to make sure that your changes don't cause a problem for the master branch.  It is a more
+complicated process to merge changes from a separate branch into the master branch, but it helps
+ensure that an unexpected change isn't made to the master code by having others review it before the
+change is accepted.
